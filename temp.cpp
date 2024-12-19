@@ -45,6 +45,6 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    freopen("filename.in", "r", stdin);
-    freopen("filename.out", "w", stdout);
+    // freopen("filename.in", "r", stdin);
+    // freopen("filename.out", "w", stdout);
 }
