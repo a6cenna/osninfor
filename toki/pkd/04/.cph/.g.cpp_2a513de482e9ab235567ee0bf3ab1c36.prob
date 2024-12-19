@@ -1,0 +1,1 @@
+{"name":"Local: g","url":"w:\\osninfor\\toki\\pkd\\04\\g.cpp","tests":[{"id":1730646719393,"input":"4 5\n1 2 1 2 2\n1 1 2 1 1\n1 1 2 1 1\n1 1 2 1 1","output":"188"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\toki\\pkd\\04\\g.cpp","group":"local","local":true}

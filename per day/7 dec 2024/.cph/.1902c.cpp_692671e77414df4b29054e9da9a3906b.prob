@@ -1,0 +1,1 @@
+{"name":"Local: 1902c","url":"w:\\osninfor\\per day\\7 dec 2024\\1902c.cpp","tests":[{"id":1733557097240,"input":"3\n3\n1 2 3\n5\n1 -19 17 -3 -15\n1\n10\n","output":"6\n27\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\per day\\7 dec 2024\\1902c.cpp","group":"local","local":true}

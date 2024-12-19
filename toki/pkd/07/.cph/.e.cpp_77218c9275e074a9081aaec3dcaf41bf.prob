@@ -1,0 +1,1 @@
+{"name":"Local: e","url":"w:\\osninfor\\toki\\pkd\\07\\e.cpp","tests":[{"id":1732662412968,"input":"1\nbabcbab","output":"7"},{"id":1732666108332,"input":"5\nwewewe\npelatnas\nkedua\ndi\njogja\n","output":"5\n3\n1\n1\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\toki\\pkd\\07\\e.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: distinctnum","url":"w:\\osninfor\\per day\\15 dec 2024\\distinctnum.cpp","tests":[{"id":1734267606583,"input":"5\n2 3 2 2 3","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\per day\\15 dec 2024\\distinctnum.cpp","group":"local","local":true}

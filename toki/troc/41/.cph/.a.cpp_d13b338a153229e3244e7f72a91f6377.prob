@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"w:\\osninfor\\toki\\troc\\41\\a.cpp","tests":[{"id":1734282746808,"input":"12 10 15","output":"YA"},{"id":1734282760237,"input":"3 3 3","output":"TIDAK"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\toki\\troc\\41\\a.cpp","group":"local","local":true}

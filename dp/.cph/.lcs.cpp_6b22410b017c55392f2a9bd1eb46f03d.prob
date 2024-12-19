@@ -1,0 +1,1 @@
+{"name":"Local: lcs","url":"w:\\osninfor\\dp\\lcs.cpp","tests":[{"id":1732689064855,"input":"abcde ace","output":"3"},{"id":1732689891172,"input":"bl yby","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\dp\\lcs.cpp","group":"local","local":true}

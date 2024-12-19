@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"w:\\osninfor\\codeforces\\993\\b.cpp","tests":[{"id":1734275380838,"input":"5\nqwq\nppppp\npppwwwqqq\nwqpqwpqwwqp\npqpqpqpq\n","output":"pwp\nqqqqq\npppwwwqqq\nqpwwpqwpqpw\npqpqpqpq\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\codeforces\\993\\b.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: dice","url":"w:\\osninfor\\dp\\dice.cpp","tests":[{"id":1732513323939,"input":"\n3","output":"4"},{"id":1732514366435,"input":"7","output":"63"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\dp\\dice.cpp","group":"local","local":true}

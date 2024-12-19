@@ -1,0 +1,1 @@
+{"name":"Local: cowqueue","url":"w:\\osninfor\\usaco\\bronze\\sorting\\cowqueue.cpp","tests":[{"id":1734354997445,"input":"3\n2 1\n8 3\n5 7","output":"15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\usaco\\bronze\\sorting\\cowqueue.cpp","group":"local","local":true}

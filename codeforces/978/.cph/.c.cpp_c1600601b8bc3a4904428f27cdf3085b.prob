@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"w:\\osninfor\\codeforces\\978\\c.cpp","tests":[{"id":1728853399086,"input":"4\n3\nAAA\nAJJ\n6\nJAJAJJ\nJJAJAJ\n6\nAJJJAJ\nAJJAAA\n9\nAJJJJAJAJ\nJAAJJJJJA\n","output":"2\n2\n3\n2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\codeforces\\978\\c.cpp","group":"local","local":true}

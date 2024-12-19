@@ -1,0 +1,1 @@
+{"name":"Local: coin1","url":"w:\\osninfor\\dp\\coin1.cpp","tests":[{"id":1732517200370,"input":"3 9\n2 3 5\n","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\dp\\coin1.cpp","group":"local","local":true}

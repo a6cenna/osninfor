@@ -1,0 +1,1 @@
+{"name":"Local: sumoftwovalues","url":"w:\\osninfor\\usaco\\bronze\\sorting\\sumoftwovalues.cpp","tests":[{"id":1734583967176,"input":"4 8\n2 7 5 1","output":"2 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\usaco\\bronze\\sorting\\sumoftwovalues.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: fibo","url":"w:\\osninfor\\dp\\fibo.cpp","tests":[{"id":1733798359348,"input":"20","output":"6765"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\dp\\fibo.cpp","group":"local","local":true}

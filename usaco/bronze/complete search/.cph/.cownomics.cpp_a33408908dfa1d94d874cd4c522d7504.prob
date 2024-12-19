@@ -1,0 +1,1 @@
+{"name":"Local: cownomics","url":"w:\\osninfor\\usaco\\bronze\\complete search\\cownomics.cpp","tests":[{"id":1734482947008,"input":"3 8\nAATCCCAT\nGATTGCAA\nGGTCGCAA\nACTCCCAG\nACTCGCAT\nACTTCCAT","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\usaco\\bronze\\complete search\\cownomics.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: mixmilk","url":"w:\\osninfor\\usaco\\bronze\\01\\mixmilk.cpp","tests":[{"id":1733468735661,"input":"10 3\n11 4\n12 5\n","output":"0\n10\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\usaco\\bronze\\01\\mixmilk.cpp","group":"local","local":true}

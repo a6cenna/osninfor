@@ -1,0 +1,1 @@
+{"name":"Local: diamond","url":"w:\\osninfor\\usaco\\bronze\\complete search\\diamond.cpp","tests":[{"id":1733487175115,"input":"5 3\n1\n6\n4\n3\n1","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\usaco\\bronze\\complete search\\diamond.cpp","group":"local","local":true}
