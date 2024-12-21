@@ -1,1 +1,0 @@
-{"name":"Local: removedigit","url":"w:\\osninfor\\dp\\removedigit.cpp","tests":[{"id":1732577663796,"input":"1","output":"1"},{"id":1732577864846,"input":"35","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\dp\\removedigit.cpp","group":"local","local":true}

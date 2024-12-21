@@ -1,1 +1,0 @@
-{"name":"Local: mincoin","url":"w:\\osninfor\\dp\\mincoin.cpp","tests":[{"id":1732515797131,"input":"3 11\n1 5 7","output":"3"},{"id":1732516204915,"input":"8 17\n5 10 11 12 13 14 15 16","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\dp\\mincoin.cpp","group":"local","local":true}
