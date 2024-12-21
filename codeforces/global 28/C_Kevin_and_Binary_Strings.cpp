@@ -5,26 +5,24 @@ void solve()
 {
     string s;
     cin >> s;
-    int l=s.size();
+    int n=s.size();
+    cout << 1 << " " << n << " ";
     if(s.find('0')==string::npos) {
-        cout << 1 << " " << l << " " << 1 << " " << 1 << '\n';
+        cout << 1 << " " << 1 << '\n';
         return;
     }
-    cout << 1 << " " << l << " ";
-    long long maxx=0;
-    long long xor1= stoll(s);
-    int l1=1, r1=l-1;
-    int loc = s.find('0');
-    for (int i = 0; i < loc; i++)
+    
+    int index_0_pertama = s.find('0');
+    int nol=1;
+    for (int i = index_0_pertama+1; i < n; i++)
     {
-        int len = l-loc;
-        long long hasil = xor1 ^ stoll(s.substr(i, len));
-        if(hasil > maxx) {
-            l1=i+1;
-            r1=i+l-loc;
-            maxx = hasil;
-        }
+        if(s[i]=='0') nol++;
+        else break;
     }
+    int l1=max(1, index_0_pertama-nol+1);
+    int r1=l1+(n-1-index_0_pertama);
+    if(l1>r1) swap(l1, r1);
+
     cout << l1 << " " << r1 << '\n';
 }
 
