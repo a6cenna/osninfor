@@ -9,16 +9,17 @@ void solve() {
     {
         cin>>s[i];
     }
+
     int ans=0;
+
     for (int i = 0; i < n; i++)
     {
-        if(m-(int)s[i].length()<0) {
-            cout << ans << '\n';
-            return;
-        }
-        else {
+        if(s[i].length()<=m) {
             m-=s[i].length();
             ans++;
+        }
+        else {
+            break;
         }
     }
     cout << ans << '\n';
