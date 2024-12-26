@@ -13,7 +13,7 @@ int main() {
         a[i]=a[i-1]+x;
     }
     while(q--) {
-        int l,r;cin>>l>>r;
-        cout << a[r]-a[l] << '\n';
+        int x,y;cin>>x>>y;
+        cout << a[y]-a[x] << '\n';
     }
 }
