@@ -1,1 +1,0 @@
-{"name":"Local: breedc","url":"w:\\osninfor\\codeforces\\usaco\\prefix\\breedc.cpp","tests":[{"id":1733447868998,"input":"6 3\n2\n1\n1\n3\n2\n1\n1 6\n3 3\n2 4","output":"3 2 1\n1 0 0\n2 0 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"w:\\osninfor\\codeforces\\usaco\\prefix\\breedc.cpp","group":"local","local":true}
