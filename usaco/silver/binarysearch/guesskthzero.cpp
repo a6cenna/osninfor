@@ -9,7 +9,7 @@ void solve() {
 
     while(l<=r) {
         int mid=(l+r)/2;
-        cout << "? " << 1 << " " << mid;
+        cout << "? " << 1 << " " << mid << endl;
         int sum;
         cin>>sum;
         if(mid-sum>=k) {
@@ -18,7 +18,7 @@ void solve() {
         else l=mid+1;
     }
 
-    cout << "! " << r+1;
+    cout << "! " << r+1 << endl;
 }
 
 int main() {
