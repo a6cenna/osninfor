@@ -28,8 +28,8 @@ int main() {
     }
 
     int ans=0;
-    for(int i=0;i<n;i++) {
-        ans=max(ans, start[i]+maxStart[start[i]+i]);
+    for(int l=0;l<n;l++) {
+        ans=max(ans, start[l]+maxStart[start[l]+l]);
     }
 
     cout << ans;
