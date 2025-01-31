@@ -6,8 +6,8 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    // freopen("filename.in", "r", stdin);
-    // freopen("filename.out", "w", stdout);
+    freopen("diamond.in", "r", stdin);
+    freopen("diamond.out", "w", stdout);
 
     int n,k;cin>>n>>k;
     int a[n];
@@ -15,28 +15,21 @@ int main() {
         cin>>a[i];
     }
     sort(a, a+n);
-    int l=0, r=0, curr=0;
+    int start[n];
+    int r=0;
+    for(int l=0;l<n;l++) {
+        while(r<n && a[r]-a[l]<=k) r++;
+        start[l]=r-l;
+    }
+    int maxStart[n+1];
+    maxStart[n]=0;
+    for(int i=n-1;i>=0;i--) {
+        maxStart[i]=max(maxStart[i+1], start[i]);
+    }
+
     int ans=0;
-    set<int> st;
-    while(l<n && r<n) {
-        while(r<n && curr<k) {
-            curr=a[r]-a[l];
-            if(curr>k) {
-                break;
-            }
-            else if (l!=r) {
-                if(!st.count(l)) {
-                    st.insert(l);
-                    ans++;
-                }
-                if(!st.count(r)) {
-                    st.insert(r);
-                    ans++;
-                }
-            }
-            r++;
-        }
-        l++;
+    for(int i=0;i<n;i++) {
+        ans=max(ans, start[i]+maxStart[start[i]+i]);
     }
 
     cout << ans;
