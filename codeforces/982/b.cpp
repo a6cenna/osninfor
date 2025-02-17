@@ -3,28 +3,35 @@
 using namespace std;
 
 void solve() {
-    int n;
-    cin >> n;
-    bool isHas=false;
-    for (int i=2;i <= n; i++) {
-        int x=0;
-        while(n%i==0) {
-            x++;
-            n/=i;
-        }
-        if(x!=0 && !isHas) {
-            cout<<i;
-            isHas=true;
-        }
-        else if(x!=0 && isHas) {
-            cout<<" x "<<i;
-        }
-        if(x>1) {
-            cout << "^" << x;
-        }
+    int n;cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++) {
+        cin>>a[i];
     }
+    int ans=INT_MAX;
+    for (int i = 0; i < n; i++)
+    {
+        int temp=0;
+        for (int j = i+1; j < n; j++)
+        {
+            if(a[i]<a[j]) {
+                temp++;
+            }
+        }
+        temp+=i;
+        ans=min(ans, temp);
+    }
+    cout << ans << '\n';
 }
 
 int main() {
-    solve();
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+
+    while(t--) {
+        solve();
+    }
 }
