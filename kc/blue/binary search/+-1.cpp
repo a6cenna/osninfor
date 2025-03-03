@@ -31,7 +31,15 @@ void solve() {
         prefixsum[i]=prefixsum[i-1]+a[i-1];
     }
     
+    while(q--) {
+        int x;cin>>x;
+        auto it = upper_bound(a, a+n, x);
+        long long ans=0;
+        ans+=x*(it-a)-prefixsum[it-a];
+        ans+=prefixsum[n]-prefixsum[it-a]-x*(n-(it-a));
 
+        cout << ans << '\n';
+    }
 }
 
 int main() {
