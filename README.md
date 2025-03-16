@@ -1,1 +1,1 @@
-i ~hate~love math
+i ~hate~ love math
