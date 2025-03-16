@@ -1,1 +1,1 @@
-my reflection for hard problem or new topic (gonna be focusing more on this because recomendation from my brother, not much because just start like recently so there is many problem i didnt write): https://shorturl.at/YgOX0 
+i ~hate~love math
