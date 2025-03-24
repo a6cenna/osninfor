@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 
+#define suffering_leaves_suffering_leaves ios::sync_with_stdio(false); cin.tie(nullptr);
 using namespace std;
 
 void solve() {
@@ -7,8 +8,7 @@ void solve() {
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    suffering_leaves_suffering_leaves
 
     int t;
     cin >> t;
@@ -22,6 +22,7 @@ int main() {
 
 #include <bits/stdc++.h>
 
+#define suffering_leaves_suffering_leaves ios::sync_with_stdio(false); cin.tie(nullptr);
 using namespace std;
 
 void solve() {
