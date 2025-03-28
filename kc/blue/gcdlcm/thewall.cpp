@@ -7,7 +7,7 @@ void solve() {
     // cari berapa banyak kelipatan dari kpk x y diantara a b
 
     long long kpk=lcm(x,y);
-    cout << b/kpk - (a-1)/kpk;// hilangkan yang kurang dari a
+    cout << b/kpk - (a-1)/kpk;// hilangkan yang kurang dari a (a termasuk)
 }
 
 int main() {

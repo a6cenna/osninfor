@@ -4,9 +4,13 @@ using namespace std;
 
 void solve() {
     int n,k;cin>>n>>k;
-    int s;cin>>s;
+    string s;cin>>s;
 
-    
+    int group=0;
+
+    for (auto c:s) {
+
+    }
 }
 
 int main() {
