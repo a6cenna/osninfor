@@ -17,8 +17,8 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    // freopen("filename.in", "r", stdin);
-    // freopen("filename.out", "w", stdout);
+    freopen("haybales.in", "r", stdin);
+    freopen("haybales.out", "w", stdout);
 
     int n,q;cin>>n>>q;
     int arr[n];
