@@ -1,6 +1,4 @@
 // author: sofwant || a6cenna
-// created at (date)
-// suffering leaves suffering leaves.
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -31,8 +29,6 @@ int main() {
 // ----- no test case -----
 
 // author: sofwant || a6cenna
-// created at (date)
-// suffering leaves suffering leaves.
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -58,8 +54,6 @@ int main() {
 // ----- USACO -----
 
 // author: sofwant || a6cenna
-// created at (date)
-// suffering leaves suffering leaves.
 
 #include <bits/stdc++.h>
 using namespace std;

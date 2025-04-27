@@ -1,52 +1,53 @@
+// author: sofwant || a6cenna
+// created at 05/04/2025
+// suffering leaves suffering leaves.
+
 #include <bits/stdc++.h>
-
 using namespace std;
-vector<vector<int>> adj;
-vector<bool> visited;
-int alrv=0;
-vector<int> connected;
-vector<int> notconnected;
 
-void dfs(int x) {
+#define suffering_leaves_suffering_leaves ios::sync_with_stdio(false); cin.tie(nullptr);
+#define ll long long
+#define pll pair<ll, ll>
+#define pii pair<int, int>
+#define fs first
+#define sc second
+#define pb push_back
+
+vector<vector<int>>adj;
+vector<bool>visited;
+
+void dfs(int x){
     if(visited[x]) return;
-    visited[x] = true;
-    connected.push_back(x);
-    alrv++;
-    for (auto nb:adj[x]) {
-        dfs(nb);
+    visited[x]=true;
+    for(auto temp:adj[x]) {
+        dfs(temp);
     }
 }
 
 void solve() {
     int n,m;cin>>n>>m;
     adj.resize(n+1);
-    visited.resize(n+1, false);
-    while(m--) {
-        int x,y;cin>>x>>y;
-        adj[x].push_back(y);
-        adj[y].push_back(x);
+    visited.resize(n+1);
+    for(int i=0;i<m;i++) {
+        int a,b;cin>>a>>b;
+        adj[a].pb(b);
+        adj[b].pb(a);
     }
-    dfs(1);
-    int need=0;
-    for (int i = 2; i <= n; i++)
-    {
-        if(!visited[i]) {
+    vector<int>ans;
+    for(int i=1;i<=n;i++) {
+        if(!visited[i]){
             dfs(i);
-            notconnected.push_back(i);
-            need++;
-        } 
+            ans.pb(i);
+        }
     }
-    cout << need << '\n';
-    for (int i = 0; i < need; i++)
-    {
-        cout << connected[i] << " " << notconnected[i] << '\n'; 
+    cout << ans.size()-1 << '\n';
+    for(int i=0;i<ans.size()-1;i++){
+        cout << ans[i] << ' ' << ans[i+1] << '\n';
     }
-    
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    suffering_leaves_suffering_leaves
 
     solve();
 }
