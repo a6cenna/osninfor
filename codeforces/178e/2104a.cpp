@@ -12,15 +12,13 @@ using namespace std;
 #define pb push_back
 
 void solve() {
-    int n,k;cin>>n>>k;
-    vector<int> maxl(k+1,0), minl(k+1, 0);
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    for(int i=0;i<n;i++) {
-        maxl[a[i]]=max(maxl[a[i]], i);
-        minl[a[i]]=max(maxl[a[i]], i);
-    }
-    
+    int a,b,c;cin>>a>>b>>c;
+    bool can=true;
+    if(b-a>c-b) can=false;
+    c-=(b-a);
+    a=b;
+    if((c-b)%3!=0) can=false;
+    cout << (can?"YES":"NO") << '\n';
 }
 
 int main() {

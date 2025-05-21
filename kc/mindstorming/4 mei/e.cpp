@@ -12,15 +12,21 @@ using namespace std;
 #define pb push_back
 
 void solve() {
-    int n,k;cin>>n>>k;
-    vector<int> maxl(k+1,0), minl(k+1, 0);
+    int n,x;cin>>n>>x;
     int a[n];
     for(int i=0;i<n;i++) cin>>a[i];
+    sort(a, a+n, greater<int>());
+    int ans=0;
+    int curr=0;
     for(int i=0;i<n;i++) {
-        maxl[a[i]]=max(maxl[a[i]], i);
-        minl[a[i]]=max(maxl[a[i]], i);
+        curr++;
+        if(curr*a[i]>=x) {
+            ans++;
+            curr=0;
+        }
     }
-    
+
+    cout << ans << '\n';
 }
 
 int main() {

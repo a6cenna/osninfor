@@ -1,5 +1,3 @@
-// author: sofwant || a6cenna
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,16 +9,25 @@ using namespace std;
 #define sc second
 #define pb push_back
 
-void solve() {
-    int n,k;cin>>n>>k;
-    vector<int> maxl(k+1,0), minl(k+1, 0);
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    for(int i=0;i<n;i++) {
-        maxl[a[i]]=max(maxl[a[i]], i);
-        minl[a[i]]=max(maxl[a[i]], i);
+const int N=1e6;
+
+vector<int> dp(N+1, INT_MAX);
+
+void pre() {
+    dp[0]=0;
+    for(int i=1;i<=N;i++) {
+        dp[i]=min(dp[i], dp[i-1]+1);
+        if(i>1) {
+            for(int j=2;j<=min(i, N/i);j++) {
+                dp[i*j]=min(dp[i*j], dp[i]+1);
+            }
+        }
     }
-    
+}
+
+void solve() {
+    int n;cin>>n;
+    cout << dp[n] << '\n';
 }
 
 int main() {
@@ -28,6 +35,8 @@ int main() {
 
     int t;
     cin >> t;
+
+    pre();
 
     while(t--) {
         solve();

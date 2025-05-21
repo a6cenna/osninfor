@@ -12,24 +12,24 @@ using namespace std;
 #define pb push_back
 
 void solve() {
-    int n,k;cin>>n>>k;
-    vector<int> maxl(k+1,0), minl(k+1, 0);
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    for(int i=0;i<n;i++) {
-        maxl[a[i]]=max(maxl[a[i]], i);
-        minl[a[i]]=max(maxl[a[i]], i);
+    int n,a,b,c;cin>>n>>a>>b>>c;
+
+    // int firstmin=min({a,b,c});
+    int ans=0;
+    for(int i=0;i*a<=n;i++) {
+        for(int j=0;j*b+i*a<=n;j++) {
+            int sisa=n-(i*a+j*b);
+            if(sisa%c==0) {
+                ans=max(ans, i+j+sisa/c);
+            }
+        }
     }
     
+    cout << ans;
 }
 
 int main() {
     suffering_leaves_suffering_leaves
 
-    int t;
-    cin >> t;
-
-    while(t--) {
-        solve();
-    }
+    solve();
 }

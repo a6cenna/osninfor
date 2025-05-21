@@ -1,5 +1,3 @@
-// author: sofwant || a6cenna
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -12,15 +10,18 @@ using namespace std;
 #define pb push_back
 
 void solve() {
-    int n,k;cin>>n>>k;
-    vector<int> maxl(k+1,0), minl(k+1, 0);
+    int n;cin>>n;
     int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
     for(int i=0;i<n;i++) {
-        maxl[a[i]]=max(maxl[a[i]], i);
-        minl[a[i]]=max(maxl[a[i]], i);
+        cin>>a[i];
     }
-    
+    int ans=0;
+    for(int i=0;i<n;i++) {
+        for(int j=i;j<n;j++) {
+            if(a[i]>a[j]) ans++;
+        }
+    }
+    cout << ans << '\n';
 }
 
 int main() {

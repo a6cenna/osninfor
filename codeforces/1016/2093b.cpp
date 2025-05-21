@@ -14,12 +14,12 @@ using namespace std;
 void solve() {
     string s;cin>>s;
     bool selain0=false;
-    int ans=0;
+    int zero=0;
     for(int i=s.size()-1;i>=0;i--) {
         if(s[i]!='0') selain0=true;
-        else if(selain0) ans++;
+        else if(selain0) zero++;
     }
-    cout << (int)s.size()-ans-1 << '\n';
+    cout << (int)s.size()-zero-1 << '\n';
 }
 
 int main() {

@@ -13,14 +13,25 @@ using namespace std;
 
 void solve() {
     int n,k;cin>>n>>k;
-    vector<int> maxl(k+1,0), minl(k+1, 0);
     int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
+    for(int i=0;i<n;i++)cin>>a[i];
+    int temp=0;
     for(int i=0;i<n;i++) {
-        maxl[a[i]]=max(maxl[a[i]], i);
-        minl[a[i]]=max(maxl[a[i]], i);
+        if(i==k-1) break;
+        if(a[i]>a[k-1]) {
+            temp=i;
+            break;
+        }
     }
-    
+    swap(a[k-1], a[temp]);
+    int ans=0;
+    if(temp!=0) ans++;
+    for(int i=temp+1;i<n;i++) {
+        if(a[i]>a[temp]) break;
+        ans++;
+    }
+    ans=max(ans, temp-1);
+    cout << ans << '\n';
 }
 
 int main() {
