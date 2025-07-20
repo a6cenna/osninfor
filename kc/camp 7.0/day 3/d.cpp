@@ -10,24 +10,37 @@ using namespace std;
 #define fs first
 #define sc second
 #define pb push_back
+#define int ll
 
 void solve() {
     int n;cin>>n;
     int a[n];
     for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
+    int l=0;
+    int r=n;
+    int ans=0;
+    while(l<=r) {
+        bool issorted=true;
+        int mid=l+(r-l)/2;
+        int prev=-1;
+        for(int i=0;i<n;i++) {
+            if(a[i]<=mid||a[i]>n-mid) continue;
+            if(a[i]<prev) issorted=false;
+            prev=a[i];
+        }
+        if(issorted) {
+            r=mid-1;
+            ans=mid;
+        }
+        else {
+            l=mid+1;
         }
     }
 
     cout << ans << '\n';
 }
 
-int main() {
+signed main() {
     suffering_leaves_suffering_leaves
 
     int t;
@@ -37,3 +50,5 @@ int main() {
         solve();
     }
 }
+
+// binser minimum

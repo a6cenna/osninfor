@@ -13,18 +13,12 @@ using namespace std;
 
 void solve() {
     int n;cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
-        }
+    cout << 2 << ' ';
+    for(int i=3;i<=n;i++) {
+        cout << i << ' ';
     }
 
-    cout << ans << '\n';
+    cout << 1 << '\n';
 }
 
 int main() {

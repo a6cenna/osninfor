@@ -13,27 +13,19 @@ using namespace std;
 
 void solve() {
     int n;cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
+    string s[n];
+    set<string> st;
+    for(int i=0;i<n;i++) cin>>s[i];
+    for(int i=0;i<n;i++) {
+        for(int j=0;j<n;j++) {
+            if(i!=j) st.insert(s[i]+s[j]);
         }
     }
-
-    cout << ans << '\n';
+    cout << st.size();
 }
 
 int main() {
     suffering_leaves_suffering_leaves
 
-    int t;
-    cin >> t;
-
-    while(t--) {
-        solve();
-    }
+    solve();
 }

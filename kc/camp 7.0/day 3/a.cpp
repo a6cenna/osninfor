@@ -10,24 +10,35 @@ using namespace std;
 #define fs first
 #define sc second
 #define pb push_back
+#define int ll
 
 void solve() {
-    int n;cin>>n;
+    int n,x;cin>>n>>x;
     int a[n];
     for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
+    sort(a,a+n);
+    int bawah=1;
+    int atas=2e9;
+    int ans=0;
+    while(bawah<=atas) {
+        int mid=(bawah+atas)/2;
+        int air=0;
+        for(auto coral:a) {
+            air+=max(mid-coral, 0LL);
+        }
+        if(air>x) {
+            atas=mid-1;
+        } 
+        else {
+            bawah=mid+1;
+            ans=mid;
         }
     }
 
     cout << ans << '\n';
 }
 
-int main() {
+signed main() {
     suffering_leaves_suffering_leaves
 
     int t;

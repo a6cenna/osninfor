@@ -14,17 +14,9 @@ using namespace std;
 void solve() {
     int n;cin>>n;
     int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
-        }
-    }
+    for(int i=0;i<n;i++)cin>>a[i];
+    vector<int> dp(n+1);
 
-    cout << ans << '\n';
 }
 
 int main() {

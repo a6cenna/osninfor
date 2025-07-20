@@ -12,19 +12,19 @@ using namespace std;
 #define pb push_back
 
 void solve() {
-    int n;cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
-        }
+    int n,s;cin>>n>>s;
+    int x[n];
+    for(int i=0;i<n;i++)cin>>x[i];
+    if(n==1) {
+        cout << abs(x[0]-s) << '\n';
+        return;
     }
-
-    cout << ans << '\n';
+    int left=x[0],r=x[n-1];
+    if(left>s)left=s;
+    if(r<s)r=s;
+    int mn=min(abs(left-s), abs(r-s));
+    int mx=max(abs(left-s), abs(r-s));
+    cout << mn*2+mx << '\n';
 }
 
 int main() {

@@ -12,28 +12,19 @@ using namespace std;
 #define pb push_back
 
 void solve() {
-    int n;cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
-        }
+    ll n;cin>>n;
+    while(n%2==0) {
+        n/=2;
     }
-
-    cout << ans << '\n';
+    if(n==1) {
+        cout << "ya" << '\n';
+        return;
+    }
+    cout << "bukan\n";
 }
 
 int main() {
     suffering_leaves_suffering_leaves
 
-    int t;
-    cin >> t;
-
-    while(t--) {
-        solve();
-    }
+    solve();
 }

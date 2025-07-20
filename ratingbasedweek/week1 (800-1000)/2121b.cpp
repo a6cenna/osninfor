@@ -13,18 +13,26 @@ using namespace std;
 
 void solve() {
     int n;cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
+    string s;cin>>s;
+    int freq[26];
+    memset(freq, 0, sizeof(freq));
+    for(int i=0;i<n;i++) {
+        freq[s[i]-'a']++;
+        if(freq[s[i]-'a']>=2) {
+            if(s[i]==s[0]&&s[0]==s[n-1]) {
+                if(freq[s[i]-'a']>=3) {
+                    cout <<"YES\n";
+                    return;
+                }
+            }
+            else {
+                cout <<"YES\n";
+                return;
+            }
         }
     }
 
-    cout << ans << '\n';
+    cout << "NO\n";
 }
 
 int main() {

@@ -12,16 +12,18 @@ using namespace std;
 #define pb push_back
 
 void solve() {
-    int n;cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
-        }
+    int n,c;cin>>n>>c;
+    vector<int> tp;
+    for(int i=1;i<=n;i++) {
+        int a;cin>>a;
+        tp.pb(a+i);
+    }
+    sort(tp.begin(), tp.end());
+    int ans=0;
+    for(int i=0;i<n;i++) {
+        if(c-tp[i]<0) break;
+        ans++;
+        c-=tp[i];
     }
 
     cout << ans << '\n';

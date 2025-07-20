@@ -10,30 +10,36 @@ using namespace std;
 #define fs first
 #define sc second
 #define pb push_back
+#define 
+
+const ll mod = 1e9+7;
+const ll N = 1e6+9;
+
+ll fastexpo(ll b, ll p) {
+    ll res=1;
+    while(p) {
+        if(p%2==1) {
+            res=res*b%mod;
+        }
+        b=b*b%mod;
+        p/=2;
+    }
+    return res;
+}
+
+vector<ll> fact[N+1];
+
+void prefac() {
+    fact[0]=1;
+    for(ll i=1;i<=N;i++) fact[i]=(fact[i-1]*i)%mod;
+}
 
 void solve() {
-    int n;cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
-    int curr=a[0];
-    int ans=1;
-    for (int i=1;i<n;i++) {
-        if(curr+1<a[i]) {
-            curr=a[i];
-            ans++;
-        }
-    }
-
-    cout << ans << '\n';
+    cout << fastexpo(2, 2);
 }
 
 int main() {
     suffering_leaves_suffering_leaves
 
-    int t;
-    cin >> t;
-
-    while(t--) {
-        solve();
-    }
+    solve();
 }
