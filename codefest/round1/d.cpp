@@ -10,7 +10,7 @@ using namespace std;
 #define pb push_back
 
 void solve() {
-    
+    int n;cin>>N;
 }
 
 int main() {

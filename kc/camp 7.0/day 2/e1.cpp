@@ -10,7 +10,7 @@ using namespace std;
 #define fs first
 #define sc second
 #define pb push_back
-#define 
+#define i
 
 const ll mod = 1e9+7;
 const ll N = 1e6+9;

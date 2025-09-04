@@ -10,6 +10,7 @@ using namespace std;
 #define fs first
 #define sc second
 #define pb push_back
+#define int ll
 
 void solve() {
     int q;cin>>q;
@@ -35,7 +36,7 @@ void solve() {
     }
 }
 
-int main() {
+signed main() {
     suffering_leaves_suffering_leaves
 
     solve();

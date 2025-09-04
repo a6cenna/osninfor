@@ -22,7 +22,10 @@ void solve() {
     vector<char> ba;
     vector<char> ca;
     for(int i=0;i<al;i++) aa.pb(a[i]);
-    cout << ans << '\n';
+    for(int i=0;i<al;i++) ba.pb(a[i]);
+    for(int i=0;i<al;i++) ca.pb(a[i]);
+    int ans=0;
+    
 }
 
 int main() {
