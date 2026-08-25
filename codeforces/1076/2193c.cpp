@@ -1,0 +1,44 @@
+// in the pool
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#define suffering_leaves_suffering_leaves ios::sync_with_stdio(false); cin.tie(nullptr);
+#define ll long long
+#define pll pair<ll, ll>
+#define pii pair<int, int>
+#define fs first
+#define sc second
+#define pb push_back
+
+void solve() {
+    int n,q;cin>>n>>q;
+    int a[n],b[n];
+    for(int i=0;i<n;i++) cin>>a[i];
+    for(int i=0;i<n;i++) cin>>b[i];
+    for(int i=n-1;i>=0;i--) {
+        if(a[i]<b[i]) a[i]=b[i];
+    }
+    for(int i=n-2;i>=0;i--) {
+        if(a[i]<a[i+1]) a[i]=a[i+1];
+    }
+    int pre[n+1];
+    pre[0]=0;
+    for(int i=1;i<=n;i++) pre[i]=pre[i-1]+a[i-1];
+    while(q--) {
+        int l,r;cin>>l>>r;
+        cout << pre[r]-pre[l-1] << ' ';
+    }
+    cout << '\n';
+}
+
+int main() {
+    suffering_leaves_suffering_leaves
+
+    int t;
+    cin >> t;
+
+    while(t--) {
+        solve();
+    }
+}

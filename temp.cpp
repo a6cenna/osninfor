@@ -53,7 +53,7 @@ int main() {
 
 // ----- USACO -----
 
-// author: sofwant || a6cenna
+// war without reason
 
 #include <bits/stdc++.h>
 using namespace std;

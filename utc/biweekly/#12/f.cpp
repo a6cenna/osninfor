@@ -1,0 +1,37 @@
+// war without reason
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#define suffering_leaves_suffering_leaves ios::sync_with_stdio(false); cin.tie(nullptr);
+#define ll long long
+#define pll pair<ll, ll>
+#define pii pair<int, int>
+#define fs first
+#define sc second
+#define pb push_back
+
+void solve() {
+    int n,k;cin>>n>>k;
+    string s;cin>>s;
+    map<string,int> mp;
+    for(int i=0;i<n-(k-1);i++) {
+        mp[s.substr(i,k)]++;
+    }
+    int mx=0;
+    for(auto [x,y]:mp) {
+        mx=max(mx,y);
+    }
+    cout << mx << '\n';
+    for(auto [x,y]:mp) {
+        if(y==mx) {
+            cout << x << ' ';
+        }
+    }
+}
+
+int main() {
+    suffering_leaves_suffering_leaves
+
+    solve();
+}

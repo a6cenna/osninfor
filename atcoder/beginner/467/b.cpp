@@ -1,0 +1,32 @@
+// war without reason
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#define war_without_reason ios::sync_with_stdio(false); cin.tie(nullptr);
+#define ll long long
+#define pll pair<ll, ll>
+#define pii pair<int, int>
+#define fs first
+#define sc second
+#define pb push_back
+
+void solve() {
+    int n;cin>>n;
+    int cur=10000,cur1=10000;
+    while(n--) {
+        int a,b;cin>>a>>b;
+        string s;cin>>s;
+        cur-=a;
+        cur1-=a;
+        if(s=="keep") cur+=a-b;
+    }
+
+    cout << cur1-cur << '\n';
+}
+
+int main() {
+    war_without_reason
+
+    solve();
+}

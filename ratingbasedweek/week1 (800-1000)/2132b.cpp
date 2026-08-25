@@ -11,6 +11,8 @@ using namespace std;
 #define sc second
 #define pb push_back
 
+vector<int> tiga;
+
 void solve() {
     string s;cin>>s;
     if(s.length()%2!=0) {
@@ -26,8 +28,12 @@ void solve() {
         cout << 0 << '\n';
         return;
     }
-
-
+    vector<int> ans;
+    
+    ans.pb(stoi(s.substr(0, s.length()/2)));
+    for(int i=(s.length()+1)/2;i>=0;i-=2) {
+        if()
+    }
 }
 
 int main() {
